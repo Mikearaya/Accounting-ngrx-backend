@@ -1,0 +1,16 @@
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Database.deps.json
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Database.dll
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Database.pdb
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Application.dll
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Commons.dll
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Domain.dll
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Domain.pdb
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Application.pdb
+/var/www/html/Accounting/Accounting.Database/bin/Debug/netstandard2.0/Accounting.Commons.pdb
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.csprojAssemblyReference.cache
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.csproj.CoreCompileInputs.cache
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.AssemblyInfoInputs.cache
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.AssemblyInfo.cs
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.csproj.CopyComplete
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.dll
+/var/www/html/Accounting/Accounting.Database/obj/Debug/netstandard2.0/Accounting.Database.pdb

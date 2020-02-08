@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Commons\Accounting.Commons.csproj" />
+    <ProjectReference Include="..\Accounting.Application\Accounting.Application.csproj" />
+  </ItemGroup>
+
+</Project>

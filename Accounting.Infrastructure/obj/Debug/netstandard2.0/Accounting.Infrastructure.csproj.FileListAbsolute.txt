@@ -1,0 +1,16 @@
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Infrastructure.deps.json
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Infrastructure.dll
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Infrastructure.pdb
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Application.dll
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Commons.dll
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Domain.dll
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Commons.pdb
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Application.pdb
+/var/www/html/Accounting/Accounting.Infrastructure/bin/Debug/netstandard2.0/Accounting.Domain.pdb
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.csprojAssemblyReference.cache
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.csproj.CoreCompileInputs.cache
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.AssemblyInfoInputs.cache
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.AssemblyInfo.cs
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.csproj.CopyComplete
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.dll
+/var/www/html/Accounting/Accounting.Infrastructure/obj/Debug/netstandard2.0/Accounting.Infrastructure.pdb
