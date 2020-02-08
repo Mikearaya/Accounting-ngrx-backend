@@ -21,10 +21,10 @@ namespace Accounting.Application.AccountCategories.Commands.DeleteAccountCategor
         }
 
         public async Task<Unit> Handle (DeleteAccountCategoryCommand request, CancellationToken cancellationToken) {
-            var category = await _database.AccountCatagory.FindAsync (request.Id);
+            var category = await _database.AccountCatagory.FindAsync (request.id);
 
             if (category == null) {
-                throw new NotFoundException ("Account category", request.Id);
+                throw new NotFoundException ("Account category", request.id);
             }
 
             _database.AccountCatagory.Remove (category);

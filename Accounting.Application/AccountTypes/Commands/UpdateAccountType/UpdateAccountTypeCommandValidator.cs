@@ -11,9 +11,9 @@ using FluentValidation;
 namespace Accounting.Application.AccountTypes.Commands.UpdateAccountType {
     public class UpdateAccountTypeCommandValidator : AbstractValidator<UpdateAccountTypeCommand> {
         public UpdateAccountTypeCommandValidator () {
-            RuleFor (x => x.Id).NotEmpty ().NotNull ();
-            RuleFor (x => x.IsTypeOf).NotEmpty ().NotNull ();
-            RuleFor (x => x.Type).NotEmpty ().NotNull ();
+            RuleFor (x => x.id).NotEmpty ().NotNull ();
+            RuleFor (x => x.isTypeOf).NotEmpty ().NotNull ();
+            RuleFor (x => x.type).NotEmpty ().NotNull ();
         }
     }
 }

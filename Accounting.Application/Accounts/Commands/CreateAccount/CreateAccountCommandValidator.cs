@@ -11,11 +11,11 @@ using FluentValidation;
 namespace Accounting.Application.Accounts.Commands.CreateAccount {
     public class CreateAccountCommandValidator : AbstractValidator<CreateAccountCommand> {
         public CreateAccountCommandValidator () {
-            RuleFor (x => x.AccountId).MinimumLength (4).NotEmpty ().NotNull ();
-            RuleFor (x => x.Active).NotNull ().NotNull ();
-            RuleFor (x => x.AccountName).NotNull ().NotEmpty ();
+            RuleFor (x => x.accountId).MinimumLength (4).NotEmpty ().NotNull ();
+            RuleFor (x => x.active).NotNull ().NotNull ();
+            RuleFor (x => x.accountName).NotNull ().NotEmpty ();
 
-            RuleFor (x => x.CatagoryId).NotEmpty ().NotNull ();
+            RuleFor (x => x.catagoryId).NotEmpty ().NotNull ();
         }
     }
 }

@@ -24,11 +24,11 @@ namespace Accounting.Application.AccountCategories.Commands.CreateAccountCategor
         public async Task<int> Handle (CreateAccountCategoryCommand request, CancellationToken cancellationToken) {
 
             AccountCatagory category = new AccountCatagory () {
-                Catagory = request.CategoryName,
-                AccountTypeId = request.AccountType,
+                Catagory = request.categoryName,
+                AccountTypeId = request.accountType,
                 DateAdded = DateTime.Now,
                 DateUpdated = DateTime.Now,
-                OverflowAccount = request.OverFlowAccount,
+                OverflowAccount = request.overFlowAccount,
             };
 
             _database.AccountCatagory.Add (category);

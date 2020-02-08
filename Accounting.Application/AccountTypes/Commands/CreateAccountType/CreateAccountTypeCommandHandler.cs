@@ -24,9 +24,9 @@ namespace Accounting.Application.AccountTypes.Commands.CreateAccountType {
         public async Task<uint> Handle (CreateAccountTypeCommand request, CancellationToken cancellationToken) {
 
             AccountType newAccountType = new AccountType () {
-                Type = request.Type,
-                IsSummery = request.IsSummary,
-                TypeOf = request.IsTypeOf
+                Type = request.type,
+                IsSummery = request.isSummary,
+                TypeOf = request.isTypeOf
             };
             _database.AccountType.Add (newAccountType);
 

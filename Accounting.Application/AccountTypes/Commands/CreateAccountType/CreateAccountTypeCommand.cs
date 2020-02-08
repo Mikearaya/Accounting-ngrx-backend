@@ -11,9 +11,9 @@ using MediatR;
 namespace Accounting.Application.AccountTypes.Commands.CreateAccountType {
     public class CreateAccountTypeCommand : IRequest<uint> {
 
-        public uint IsTypeOf { get; set; }
-        public string Type { get; set; }
-        public sbyte IsSummary { get; set; }
+        public uint isTypeOf { get; set; }
+        public string type { get; set; }
+        public sbyte isSummary { get; set; }
 
     }
 }

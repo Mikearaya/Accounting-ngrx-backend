@@ -13,9 +13,9 @@ namespace Accounting.Application.AccountCategories.Commands.UpdateAccountCategor
 
     public class UpdateAccountCategoryCommand : IRequest {
 
-        public int Id { get; set; }
-        public uint AccountType { get; set; }
-        public string CategoryName { get; set; }
-        public int? OverFlowAccount { get; set; }
+        public int id { get; set; }
+        public uint accountType { get; set; }
+        public string categoryName { get; set; }
+        public int? overFlowAccount { get; set; }
     }
 }

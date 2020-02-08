@@ -12,8 +12,8 @@ using MediatR;
 namespace Accounting.Application.AccountCategories.Commands.CreateAccountCategory {
     public class CreateAccountCategoryCommand : IRequest<int> {
 
-        public string CategoryName { get; set; }
-        public uint AccountType { get; set; }
-        public int? OverFlowAccount { get; set; }
+        public string categoryName { get; set; }
+        public uint accountType { get; set; }
+        public int? overFlowAccount { get; set; }
     }
 }

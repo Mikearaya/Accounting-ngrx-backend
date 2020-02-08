@@ -12,20 +12,20 @@ using Accounting.Domain;
 
 namespace Accounting.Application.AccountTypes.Models {
     public class AccountTypeView {
-        public uint Id { get; set; }
-        public uint? IsTypeOf { get; set; }
-        public string Type { get; set; }
-        public sbyte IsSummary { get; set; }
-        public string Parent { get; set; }
+        public uint id { get; set; }
+        public uint? isTypeOf { get; set; }
+        public string type { get; set; }
+        public sbyte isSummary { get; set; }
+        public string parent { get; set; }
 
         public static Expression<Func<AccountType, AccountTypeView>> Projection {
             get {
                 return accountType => new AccountTypeView () {
-                    Id = accountType.Id,
-                    Type = accountType.Type,
-                    IsSummary = accountType.IsSummery,
-                    Parent = accountType.TypeOfNavigation.Type,
-                    IsTypeOf = accountType.TypeOf,
+                    id = accountType.Id,
+                    type = accountType.Type,
+                    isSummary = accountType.IsSummery,
+                    parent = accountType.TypeOfNavigation.Type,
+                    isTypeOf = accountType.TypeOf,
                 };
             }
         }

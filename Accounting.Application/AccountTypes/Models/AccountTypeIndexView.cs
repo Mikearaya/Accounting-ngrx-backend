@@ -12,16 +12,16 @@ using Accounting.Domain;
 
 namespace Accounting.Application.AccountTypes.Models {
     public class AccountTypeIndexView {
-        public uint Id { get; set; }
-        public string Name { get; set; }
-        public uint? TypeOf { get; set; }
+        public uint id { get; set; }
+        public string name { get; set; }
+        public uint? typeOf { get; set; }
 
         public static Expression<Func<AccountType, AccountTypeIndexView>> Projection {
             get {
                 return accountType => new AccountTypeIndexView () {
-                    Id = accountType.Id,
-                    Name = accountType.Type,
-                    TypeOf = accountType.TypeOf
+                    id = accountType.Id,
+                    name = accountType.Type,
+                    typeOf = accountType.TypeOf
                 };
             }
         }

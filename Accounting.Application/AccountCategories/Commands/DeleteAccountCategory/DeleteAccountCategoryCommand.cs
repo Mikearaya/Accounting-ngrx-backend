@@ -10,6 +10,6 @@ using MediatR;
 
 namespace Accounting.Application.AccountCategories.Commands.DeleteAccountCategory {
     public class DeleteAccountCategoryCommand : IRequest {
-        public int Id { get; set; }
+        public int id { get; set; }
     }
 }

@@ -11,8 +11,8 @@ using FluentValidation;
 namespace Accounting.Application.AccountTypes.Commands.CreateAccountType {
     public class CreateAccountTypeCommandValidator : AbstractValidator<CreateAccountTypeCommand> {
         public CreateAccountTypeCommandValidator () {
-            RuleFor (x => x.IsTypeOf).NotEmpty ().NotNull ();
-            RuleFor (x => x.Type).NotEmpty ().NotNull ();
+            RuleFor (x => x.isTypeOf).NotEmpty ().NotNull ();
+            RuleFor (x => x.type).NotEmpty ().NotNull ();
         }
     }
 }

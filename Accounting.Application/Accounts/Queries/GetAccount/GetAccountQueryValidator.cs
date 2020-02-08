@@ -11,7 +11,7 @@ using FluentValidation;
 namespace Accounting.Application.Accounts.Queries.GetAccount {
     public class GetAccountQueryValidator : AbstractValidator<GetAccountQuery> {
         public GetAccountQueryValidator () {
-            RuleFor (x => x.Id).NotEmpty ().NotNull ();
+            RuleFor (x => x.id).NotEmpty ().NotNull ();
         }
     }
 }

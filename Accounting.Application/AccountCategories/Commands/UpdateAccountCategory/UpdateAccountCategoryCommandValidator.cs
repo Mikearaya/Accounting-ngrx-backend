@@ -13,9 +13,9 @@ namespace Accounting.Application.AccountCategories.Commands.UpdateAccountCategor
     public class UpdateAccountCategoryCommandValidator : AbstractValidator<UpdateAccountCategoryCommand> {
         public UpdateAccountCategoryCommandValidator () {
 
-            RuleFor (c => c.Id).NotNull ().NotEqual (0);
-            RuleFor (c => c.CategoryName).NotEmpty ().NotNull ();
-            RuleFor (c => c.AccountType).NotEmpty ().NotNull ();
+            RuleFor (c => c.id).NotNull ().NotEqual (0);
+            RuleFor (c => c.categoryName).NotEmpty ().NotNull ();
+            RuleFor (c => c.accountType).NotEmpty ().NotNull ();
         }
     }
 }

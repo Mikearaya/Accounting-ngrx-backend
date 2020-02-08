@@ -26,10 +26,10 @@ namespace Accounting.Application.AccountCategories.Queries.GetAccountCategory {
         public async Task<AccountCategoryView> Handle (GetAccountCategoryQuery request, CancellationToken cancellationToken) {
             var accountCategory = await _database.AccountCatagory
                 .Select (AccountCategoryView.Projection)
-                .FirstOrDefaultAsync (c => c.Id == request.Id);
+                .FirstOrDefaultAsync (c => c.Id == request.id);
 
             if (accountCategory == null) {
-                throw new NotFoundException ("Account category", request.Id);
+                throw new NotFoundException ("Account category", request.id);
             }
 
             return accountCategory;

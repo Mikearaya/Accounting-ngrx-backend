@@ -48,7 +48,7 @@ namespace Accounting.Api.Controllers.AccountCategories {
         public async Task<ActionResult<AccountCategoryView>> FindAccountCategoryById (int id) {
 
             try {
-                var result = await _Mediator.Send (new GetAccountCategoryQuery () { Id = id });
+                var result = await _Mediator.Send (new GetAccountCategoryQuery () { id = id });
                 return Ok (result);
             } catch (NotFoundException e) {
                 return NotFound (e.Message);
@@ -77,7 +77,7 @@ namespace Accounting.Api.Controllers.AccountCategories {
         public async Task<ActionResult<AccountCategoryView>> CreateAccountCategory ([FromBody] CreateAccountCategoryCommand model) {
 
             var result = await _Mediator.Send (model);
-            var category = await _Mediator.Send (new GetAccountCategoryQuery () { Id = result });
+            var category = await _Mediator.Send (new GetAccountCategoryQuery () { id = result });
             return StatusCode (201, category);
 
         }
@@ -115,7 +115,7 @@ namespace Accounting.Api.Controllers.AccountCategories {
 
             try {
 
-                var result = await _Mediator.Send (new DeleteAccountCategoryCommand () { Id = id });
+                var result = await _Mediator.Send (new DeleteAccountCategoryCommand () { id = id });
                 return NoContent ();
             } catch (NotFoundException e) {
                 return NotFound (e.Message);

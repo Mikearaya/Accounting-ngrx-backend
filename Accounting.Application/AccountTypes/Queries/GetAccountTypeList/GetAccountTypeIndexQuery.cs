@@ -12,7 +12,7 @@ using MediatR;
 
 namespace Accounting.Application.AccountTypes.Queries.GetAccountTypeList {
     public class GetAccountTypeIndexQuery : IRequest<IEnumerable<AccountTypeIndexView>> {
-        public bool Main { get; set; }
-        public uint TypeOf { get; set; }
+        public bool main { get; set; }
+        public uint typeOf { get; set; }
     }
 }

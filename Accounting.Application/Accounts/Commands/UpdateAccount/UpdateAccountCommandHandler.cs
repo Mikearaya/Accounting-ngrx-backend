@@ -23,20 +23,20 @@ namespace Accounting.Application.Accounts.Commands.UpdateAccount {
 
         public async Task<Unit> Handle (UpdateAccountCommand request, CancellationToken cancellationToken) {
 
-            var account = await _database.Accounts.FindAsync (request.Id);
+            var account = await _database.Accounts.FindAsync (request.id);
 
             if (account == null) {
-                throw new NotFoundException ("Account", request.Id);
+                throw new NotFoundException ("Account", request.id);
             }
 
-            account.AccountName = request.AccountName;
-            account.AccountId = request.AccountId;
-            account.Active = request.Active;
-            account.ParentAccount = request.ParentAccount;
+            account.AccountName = request.accountName;
+            account.AccountId = request.accountId;
+            account.Active = request.active;
+            account.ParentAccount = request.parentAccount;
             account.DateUpdated = DateTime.Now;
 
-            if (request.ParentAccount != 0) {
-                account.ParentAccount = request.ParentAccount;
+            if (request.parentAccount != 0) {
+                account.ParentAccount = request.parentAccount;
             }
 
             _database.Accounts.Update (account);

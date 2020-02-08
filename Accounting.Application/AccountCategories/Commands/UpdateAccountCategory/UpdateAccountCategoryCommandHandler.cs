@@ -21,15 +21,15 @@ namespace Accounting.Application.AccountCategories.Commands.UpdateAccountCategor
         }
 
         public async Task<Unit> Handle (UpdateAccountCategoryCommand request, CancellationToken cancellationToken) {
-            var catagory = await _database.AccountCatagory.FindAsync (request.Id);
+            var catagory = await _database.AccountCatagory.FindAsync (request.id);
 
             if (catagory == null) {
-                throw new NotFoundException ("Account Category", request.Id);
+                throw new NotFoundException ("Account Category", request.id);
             }
 
-            catagory.Catagory = request.CategoryName;
-            catagory.AccountTypeId = request.AccountType;
-            catagory.OverflowAccount = request.OverFlowAccount;
+            catagory.Catagory = request.categoryName;
+            catagory.AccountTypeId = request.accountType;
+            catagory.OverflowAccount = request.overFlowAccount;
 
             _database.AccountCatagory.Update (catagory);
 

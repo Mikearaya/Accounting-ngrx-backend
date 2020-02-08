@@ -12,9 +12,9 @@ namespace Accounting.Application.Accounts.Commands.UpdateAccount {
     public class UpdateAccountCommandValidator : AbstractValidator<UpdateAccountCommand> {
         public UpdateAccountCommandValidator () {
 
-            RuleFor (x => x.Id).NotEmpty ().NotNull ();
-            RuleFor (x => x.AccountName).NotEmpty ().NotNull ();
-            RuleFor (x => x.AccountId).MinimumLength (4).NotEmpty ().NotNull ();
+            RuleFor (x => x.id).NotEmpty ().NotNull ();
+            RuleFor (x => x.accountName).NotEmpty ().NotNull ();
+            RuleFor (x => x.accountId).MinimumLength (4).NotEmpty ().NotNull ();
 
         }
     }

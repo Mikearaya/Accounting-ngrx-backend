@@ -44,7 +44,7 @@ namespace Accounting.Api.Controllers.AccountTypes {
         [HttpGet ("accounttypes")]
         public async Task<ActionResult<IEnumerable<AccountTypeView>>> GetAccountTypesList ([FromQuery] GetAccountTypeListQuery query) {
             var accountType = await _Mediator.Send (query);
-            return Ok (accountType.Items);
+            return Ok (accountType);
         }
 
         /// <summary>

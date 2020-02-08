@@ -6,11 +6,10 @@
  * @Last Modified Time: May 23, 2019 3:36 PM
  * @Description: Modify Here, Please 
  */
-using System.Collections.Generic;
+
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Accounting.Application.AccountCategories.Models;
 using Accounting.Application.AccountTypes.Models;
 using Accounting.Application.Interfaces;
 using Accounting.Application.Models;
@@ -26,7 +25,7 @@ namespace Accounting.Application.AccountTypes.Queries.GetAccountTypeList {
         }
 
         public Task<FilterResultModel<AccountTypeView>> Handle (GetAccountTypeListQuery request, CancellationToken cancellationToken) {
-            var sortBy = request.SortBy.Trim () != "" ? request.SortBy : "Type";
+            var sortBy = request.SortBy.Trim () != "" ? request.SortBy : "type";
             var sortDirection = (request.SortDirection.ToUpper () == "DESCENDING") ? true : false;
 
             FilterResultModel<AccountTypeView> result = new FilterResultModel<AccountTypeView> ();

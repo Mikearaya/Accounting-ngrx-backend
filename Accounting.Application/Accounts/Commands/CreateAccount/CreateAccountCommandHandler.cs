@@ -27,22 +27,22 @@ namespace Accounting.Application.Accounts.Commands.CreateAccount {
             var currentYear = _database.Accounts.Max (a => a.Year);
 
             var account = new Account () {
-                AccountName = request.AccountName,
-                Active = request.Active,
-                CatagoryId = request.CatagoryId,
-                AccountId = request.AccountId,
+                AccountName = request.accountName,
+                Active = request.active,
+                CatagoryId = request.catagoryId,
+                AccountId = request.accountId,
                 Year = currentYear,
-                OpeningBalance = request.OpeningBalance,
+                OpeningBalance = request.openingBalance,
                 DateAdded = DateTime.Now,
                 DateUpdated = DateTime.Now
             };
 
-            if (request.ParentAccount != 0) {
-                account.ParentAccount = request.ParentAccount;
+            if (request.parentAccount != 0) {
+                account.ParentAccount = request.parentAccount;
             }
 
-            if (request.CostCenterId != 0) {
-                account.CostCenterId = request.CostCenterId;
+            if (request.costCenterId != 0) {
+                account.CostCenterId = request.costCenterId;
             }
             _database.Accounts.Add (account);
 

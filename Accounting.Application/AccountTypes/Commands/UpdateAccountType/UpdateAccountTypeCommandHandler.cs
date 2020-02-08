@@ -21,15 +21,15 @@ namespace Accounting.Application.AccountTypes.Commands.UpdateAccountType {
         }
 
         public async Task<Unit> Handle (UpdateAccountTypeCommand request, CancellationToken cancellationToken) {
-            var accountType = await _database.AccountType.FindAsync (request.Id);
+            var accountType = await _database.AccountType.FindAsync (request.id);
 
             if (accountType == null) {
-                throw new NotFoundException ("AccountType", request.Id);
+                throw new NotFoundException ("AccountType", request.id);
             }
 
-            accountType.IsSummery = request.IsSummary;
-            accountType.Type = request.Type;
-            accountType.TypeOf = request.IsTypeOf;
+            accountType.IsSummery = request.isSummary;
+            accountType.Type = request.type;
+            accountType.TypeOf = request.isTypeOf;
 
             _database.AccountType.Update (accountType);
             await _database.SaveAsync ();

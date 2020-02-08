@@ -11,7 +11,7 @@ using FluentValidation;
 namespace Accounting.Application.Accounts.Commands.DeleteAccount {
     public class DeleteAccountCommandValidator : AbstractValidator<DeleteAccountCommand> {
         public DeleteAccountCommandValidator () {
-            RuleFor (x => x.Id).NotEmpty ().NotNull ();
+            RuleFor (x => x.id).NotEmpty ().NotNull ();
         }
     }
 }

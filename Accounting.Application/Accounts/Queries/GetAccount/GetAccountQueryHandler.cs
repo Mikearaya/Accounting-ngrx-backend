@@ -29,10 +29,10 @@ namespace Accounting.Application.Accounts.Queries.GetAccount {
                 .Include (x => x.CostCenter)
                 .Include (x => x.Catagory)
                 .Select (AccountViewModel.Projection)
-                .FirstOrDefaultAsync (c => c.Id == request.Id);
+                .FirstOrDefaultAsync (c => c.Id == request.id);
 
             if (account == null) {
-                throw new NotFoundException ("Account", request.Id);
+                throw new NotFoundException ("Account", request.id);
             }
 
             return account;

@@ -11,6 +11,6 @@ using MediatR;
 
 namespace Accounting.Application.AccountCategories.Queries.GetAccountCategory {
     public class GetAccountCategoryQuery : IRequest<AccountCategoryView> {
-        public int Id { get; set; }
+        public int id { get; set; }
     }
 }

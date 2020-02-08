@@ -12,8 +12,8 @@ namespace Accounting.Application.AccountCategories.Commands.CreateAccountCategor
     public class CreateAccountCategoryCommandValidator : AbstractValidator<CreateAccountCategoryCommand> {
         public CreateAccountCategoryCommandValidator () {
 
-            RuleFor (c => c.CategoryName).NotEmpty ().NotNull ();
-            RuleFor (c => c.AccountType).NotEmpty ().NotNull ();
+            RuleFor (c => c.categoryName).NotEmpty ().NotNull ();
+            RuleFor (c => c.accountType).NotEmpty ().NotNull ();
         }
     }
 }

@@ -25,10 +25,10 @@ namespace Accounting.Application.Accounts.Commands.DeleteAccount {
 
         public async Task<Unit> Handle (DeleteAccountCommand request, CancellationToken cancellationToken) {
             var account = await _database.Accounts
-                .FindAsync (request.Id);
+                .FindAsync (request.id);
 
             if (account == null) {
-                throw new NotFoundException ("Account", request.Id);
+                throw new NotFoundException ("Account", request.id);
             }
 
             _database.Accounts.Remove (account);

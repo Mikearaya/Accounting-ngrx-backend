@@ -12,6 +12,6 @@ using MediatR;
 
 namespace Accounting.Application.Accounts.Queries.GetAccount {
     public class GetAccountQuery : IRequest<AccountViewModel> {
-        public int Id { get; set; }
+        public int id { get; set; }
     }
 }

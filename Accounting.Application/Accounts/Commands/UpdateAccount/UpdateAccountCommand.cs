@@ -10,10 +10,10 @@ using MediatR;
 
 namespace Accounting.Application.Accounts.Commands.UpdateAccount {
     public class UpdateAccountCommand : IRequest {
-        public int Id { get; set; }
-        public int? ParentAccount { get; set; }
-        public string AccountName { get; set; }
-        public string AccountId { get; set; }
-        public sbyte Active { get; set; }
+        public int id { get; set; }
+        public int? parentAccount { get; set; }
+        public string accountName { get; set; }
+        public string accountId { get; set; }
+        public sbyte active { get; set; }
     }
 }

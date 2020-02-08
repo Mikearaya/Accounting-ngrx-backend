@@ -10,12 +10,12 @@ using MediatR;
 
 namespace Accounting.Application.Accounts.Commands.CreateAccount {
     public class CreateAccountCommand : IRequest<int> {
-        public string AccountId { get; set; }
-        public int? ParentAccount { get; set; }
-        public int CatagoryId { get; set; }
-        public string AccountName { get; set; }
-        public sbyte Active { get; set; }
-        public int? CostCenterId { get; set; }
-        public float? OpeningBalance { get; set; }
+        public string accountId { get; set; }
+        public int? parentAccount { get; set; }
+        public int catagoryId { get; set; }
+        public string accountName { get; set; }
+        public sbyte active { get; set; }
+        public int? costCenterId { get; set; }
+        public float? openingBalance { get; set; }
     }
 }

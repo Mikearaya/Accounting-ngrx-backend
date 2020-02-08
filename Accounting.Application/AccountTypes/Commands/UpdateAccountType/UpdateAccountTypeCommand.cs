@@ -12,10 +12,10 @@ using MediatR;
 
 namespace Accounting.Application.AccountTypes.Commands.UpdateAccountType {
     public class UpdateAccountTypeCommand : IRequest {
-        public uint Id { get; set; }
-        public uint IsTypeOf { get; set; }
-        public string Type { get; set; }
-        public sbyte IsSummary { get; set; }
+        public uint id { get; set; }
+        public uint isTypeOf { get; set; }
+        public string type { get; set; }
+        public sbyte isSummary { get; set; }
 
     }
 }

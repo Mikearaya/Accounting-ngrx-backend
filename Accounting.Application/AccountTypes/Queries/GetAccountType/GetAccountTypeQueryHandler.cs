@@ -26,7 +26,7 @@ namespace Accounting.Application.AccountTypes.Queries.GetAccountType {
         public async Task<AccountTypeView> Handle (GetAccountTypeQuery request, CancellationToken cancellationToken) {
             var accountType = await _database.AccountType
                 .Select (AccountTypeView.Projection)
-                .FirstOrDefaultAsync (a => a.Id == request.Id && a.IsTypeOf != 0);
+                .FirstOrDefaultAsync (a => a.id == request.Id && a.isTypeOf != 0);
 
             if (accountType == null) {
                 throw new NotFoundException ("Account Type", request.Id);
